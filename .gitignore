@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# localenv
+ansible_test/
