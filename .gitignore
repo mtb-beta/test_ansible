@@ -102,3 +102,4 @@ ENV/
 
 # localenv
 ansible_test/
+.vagrant/

@@ -10,5 +10,6 @@ cd test_ansible
 python3 -m venv ansible_test
 . ansible_test/bin/activate
 pip install -r requirements.txt
+vagrant up
 ```
 
