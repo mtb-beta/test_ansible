@@ -30,7 +30,22 @@ vagrant up
 vagrant ssh
 ```
 
+ローカルの `.ssh/config`に設定を追加します。
 
+```
+Host ansible_test
+    HostName 192.168.33.11
+    IdentityFile /path/to/test_ansible/.vagrant/machines/default/virtualbox/private_key
+    User vagrant
+```
+
+鍵の場所は、各ローカル環境のvagrantフォルダの中の鍵を指定します。
+
+
+設定できたらsshが接続可能なことを確認します。
+```
+ssh ansible_test
+```
 
 
 
