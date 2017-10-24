@@ -48,4 +48,14 @@ ssh ansible_test
 ```
 
 
+Ansibleで接続できることを確認します。
+
+```
+$ ansible all -i inventory -m ping
+ansible_test | SUCCESS => {
+    "changed": false,
+    "failed": false,
+    "ping": "pong"
+}
+```
 
