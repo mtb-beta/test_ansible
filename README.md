@@ -64,3 +64,8 @@ user.ymlを実行します。
 ansible-playbook user.yml -i inventory
 ```
 
+template.ymlを実行します。
+
+```
+ansible-playbook template.yml -i inventory
+```

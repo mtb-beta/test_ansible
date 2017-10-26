@@ -1,0 +1,15 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: copy sample
+      copy:
+        src: my_template_sample.j2
+        dest: /home/ansible_test/sample_put.txt
+
+    - name: templates sample
+      template:
+        src: my_template_sample.j2
+        dest: /home/ansible_test/sample_template.txt
+      vars:
+        param:
+            - value
