@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: make user
+      user:
+        name: ansible_test
