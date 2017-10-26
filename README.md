@@ -59,3 +59,8 @@ ansible_test | SUCCESS => {
 }
 ```
 
+user.ymlを実行します。
+```
+ansible-playbook user.yml -i inventory
+```
+
